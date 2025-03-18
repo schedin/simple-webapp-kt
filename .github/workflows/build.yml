@@ -1,0 +1,19 @@
+name: Build and test application
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-frontend:
+    name: Build Web build-frontend
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Web
+      
+    steps:
+      - uses: actions/checkout@v3
+
+
+
