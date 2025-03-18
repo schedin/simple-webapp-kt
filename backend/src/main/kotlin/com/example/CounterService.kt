@@ -10,7 +10,7 @@ class CounterService {
     }
     
     fun increment(): Int {
-        return counter.incrementAndGet() + 10
+        return counter.incrementAndGet()
     }
     
     fun decrement(): Int {
